@@ -17,7 +17,11 @@ app.use(express.json({ extended: false }));
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 connectDB();
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:3000", `https://nft-stealing-front.vercel.app`],
+  })
+);
 
 app.use("/mint", mintRouter);
 
