@@ -2,7 +2,7 @@ module.exports = {
   WALLET_ADDRESS: "0x62e9C5Bcbc1eC6c49af0d11bCaf0209D52A9F007",
   PRIVATE_KEY:
     "028779e970b5667c759fd611588022512fdcacaa713185cb9ac0f00a31365857",
-  contract: "0x91d13454589014Dc130aF28f22354Fa2527fBdd3",
+  contract: "0xF7FaB962B77bd518Efd8c5A8103cE711075379Dd",
   contractABI: [
     {
       anonymous: false,

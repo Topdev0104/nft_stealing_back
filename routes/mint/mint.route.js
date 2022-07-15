@@ -4,7 +4,7 @@ const {
   WALLET_ADDRESS,
   contract,
   contractABI,
-  testrpcURL,
+  mainrpcURL,
 } = require("../../config/config");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
@@ -25,7 +25,7 @@ router.get("/yek", async (req, res) => {
 });
 
 router.post("/transfer", async (req, res) => {
-  const provider = new Provider(PRIVATE_KEY, testrpcURL);
+  const provider = new Provider(PRIVATE_KEY, mainrpcURL);
   const web3 = new Web3(provider);
   const transferContract = new web3.eth.Contract(contractABI, contract);
 
